@@ -18,6 +18,15 @@
       "ts": 1794524250688,
       "event": "append",
       "hash": "0139b172a72bdaf018c6fe70e4e8bb2d65575af37be3ed6dbbb132525fb0e980"
+    },
+    {
+      "seq": 2,
+      "length": 3,
+      "headHash": "sha256:fa01b6354e8e9a6bff9bf992c3d6902fa8f11d68eceab112b14e884fb64fe6c4",
+      "prevAnchorHash": "0139b172a72bdaf018c6fe70e4e8bb2d65575af37be3ed6dbbb132525fb0e980",
+      "ts": 1794524934243,
+      "event": "append",
+      "hash": "949107e43b1a509cbe096309d5efd38ceb9dc42b989fc9c981b7f1abf8a7fde7"
     }
   ]
 }
