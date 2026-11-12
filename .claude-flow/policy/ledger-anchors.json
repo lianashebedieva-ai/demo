@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "seq": 0,
+      "length": 1,
+      "headHash": "sha256:2f0840198350ca63faf14b63f5e48a718e727f3b8f3cced3ef87d44167a69de8",
+      "prevAnchorHash": null,
+      "ts": 1794524184957,
+      "event": "append",
+      "hash": "20c9a5b2808103958c08da1a41c67e42cca5dea9aded7f278e0e4f947bbc5052"
+    },
+    {
+      "seq": 1,
+      "length": 2,
+      "headHash": "sha256:9a32e0c8ee994347c9c026b42937708985ea08cec05a2043e92aa12e19ba5518",
+      "prevAnchorHash": "20c9a5b2808103958c08da1a41c67e42cca5dea9aded7f278e0e4f947bbc5052",
+      "ts": 1794524250688,
+      "event": "append",
+      "hash": "0139b172a72bdaf018c6fe70e4e8bb2d65575af37be3ed6dbbb132525fb0e980"
+    }
+  ]
+}

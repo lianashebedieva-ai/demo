@@ -1,0 +1,23 @@
+{
+  "entries": {
+    "cmd-1794524185035": {
+      "key": "cmd-1794524185035",
+      "value": "{\"command\":\"set -e; L=\\\"/Users/adlanm/Library/Application Support/Claude/scratch-workspaces/4bb88111-cced-4a58-8abc-b4adba30fe4b/a5ddf99e-82cb-4b12-ade4-b999cc84be96/scratch-2026-11-07-2c60c3/leads10\\\"; P=\\\"$L/publish\\\"; rm -rf \\\"$P\\\"; mkdir -p \\\"$P/img\\\"; cp \\\"$L\\\"/img/*.jpg \\\"$P/img/\\\"; for f in \\\"$L\\\"/site/*.html; do /usr/bin/sed -e 's|\\\\.\\\\./img/|img/|g' -e 's|<meta name=\\\"viewport\\\"|<meta name=\\\"robots\\\" content=\\\"noindex\\\"><meta name=\\\"viewport\\\"|' \\\"$f\\\" > \\\"$P/$(basename \\\"$f\\\")\\\"; done; printf 'User-agent: *\\\\nDisallow: /\\\\n' > \\\"$P/robots.txt\\\"; touch \\\"$P/.nojekyll\\\"; cd \\\"$P\\\"; git init -q -b main; git add -A; git commit -q -m \\\"Demo sites\\\"; gh repo create lianashebedieva-ai/demo --public --source=. --push 2>&1 | tail -2; gh api -X POST repos/lianashebedieva-ai/demo/pages -f 'source[branch]=main' -f 'source[path]=/' 2>&1 | head -c 300\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-12T22:56:25.035Z",
+      "lastAccessed": "2026-11-12T22:56:25.035Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-12T22:56:25.035Z"
+    },
+    "cmd-1794524250795": {
+      "key": "cmd-1794524250795",
+      "value": "{\"command\":\"for i in $(seq 1 20); do c=$(curl -s -o /dev/null -w \\\"%{http_code}\\\" https://lianashebedieva-ai.github.io/demo/clubnails.html); [ \\\"$c\\\" = 200 ] && break; sleep 10; done; echo first:$c; for s in shibuya clubnails mates ngb apnails laiderer mirelle mesto lovelash organic; do echo \\\"$s $(curl -s -o /dev/null -w '%{http_code}' https://lianashebedieva-ai.github.io/demo/$s.html) $(curl -s -o /dev/null -w '%{http_code}' https://lianashebedieva-ai.github.io/demo/img/$s.jpg)\\\"; done\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-12T22:57:30.795Z",
+      "lastAccessed": "2026-11-12T22:57:30.795Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-12T22:57:30.795Z"
+    }
+  },
+  "version": "3.0.0"
+}
