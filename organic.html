@@ -1,0 +1,97 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="robots" content="noindex"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Органик — запись онлайн</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1ea;--ink:#17201a;--soft:#66705f;--acc:#2f6b3a;--acci:#ffffff;--surf:#ffffff;--line:color-mix(in srgb,var(--ink) 12%,transparent)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:500 17px/1.55 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font:700 18px Unbounded;letter-spacing:-.02em}
+nav .r{display:flex;gap:26px;align-items:center;font-size:15px;color:var(--soft)}
+nav .r a:hover{color:var(--ink)}
+.pill{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:700;font-size:16px;transition:transform .5s cubic-bezier(.2,.8,.2,1),background .3s}
+.pill:active{transform:scale(.97)}
+.p1{background:var(--acc);color:var(--acci)}
+.p1:hover{transform:translateY(-2px)}
+.p2{border:1.5px solid var(--line)}
+.p2:hover{border-color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding:56px 0 90px;min-height:calc(100dvh - 80px)}
+.chip{display:inline-flex;gap:8px;align-items:center;font-size:14px;color:var(--soft);border:1px solid var(--line);border-radius:999px;padding:7px 14px;margin-bottom:30px}
+.chip b{color:var(--ink)}
+.star{color:var(--acc)}
+h1{font:800 clamp(44px,6.6vw,96px)/.98 Unbounded;letter-spacing:-.045em;margin-bottom:26px;overflow-wrap:normal;hyphens:manual}
+.lead{font-size:20px;color:var(--soft);max-width:30ch;margin-bottom:38px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.shot{aspect-ratio:4/5;border-radius:28px;overflow:hidden;position:relative;background:var(--surf);box-shadow:0 40px 90px -40px color-mix(in srgb,var(--ink) 35%,transparent)}
+.shot img{width:100%;height:100%;object-fit:cover;transform:scale(1.04);animation:z 14s ease-out forwards}
+@keyframes z{to{transform:scale(1)}}
+.noimg{display:grid;place-items:center;background:radial-gradient(circle at 30% 30%,var(--acc),transparent 60%),var(--surf)}
+.noimg span{font:800 260px Unbounded;color:var(--bg);mix-blend-mode:normal;opacity:.9}
+section{padding:110px 0;border-top:1px solid var(--line)}
+.eyebrow{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--soft);margin-bottom:18px}
+h2{font:700 clamp(32px,4vw,54px)/1.04 Unbounded;letter-spacing:-.035em;max-width:16ch}
+.svc{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+.svc ul{list-style:none}
+.svc li{display:flex;gap:24px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--line);font-size:clamp(20px,2.2vw,28px);font-weight:700;letter-spacing:-.01em}
+.num{font:500 14px Manrope;color:var(--soft);min-width:28px}
+.svc p{color:var(--soft);margin-top:20px;max-width:34ch}
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:22px;padding:30px}
+.card small{display:block;color:var(--soft);font-size:14px;margin-bottom:12px}
+.card b{font:700 22px/1.3 Manrope}
+.cta{text-align:left;display:flex;justify-content:space-between;align-items:end;gap:40px;flex-wrap:wrap}
+.cta h2{max-width:14ch}
+footer{padding:36px 0 46px;color:var(--soft);font-size:14px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line)}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+.sticky{display:none}
+@media(max-width:860px){
+ .wrap{padding:0 16px}
+ nav .r a:not(.pill){display:none}
+ .hero{grid-template-columns:1fr;gap:34px;padding:20px 0 60px;min-height:auto}
+ .shot{aspect-ratio:4/4.4;order:-1}
+ .lead{font-size:18px}
+ section{padding:72px 0}
+ .svc{grid-template-columns:1fr;gap:20px}
+ .info{grid-template-columns:1fr}
+ .sticky{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:10;justify-content:center}
+ .sticky .pill{width:100%;justify-content:center;box-shadow:0 14px 40px -12px rgba(0,0,0,.45)}
+ footer{padding-bottom:96px}
+}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.shot img{animation:none;transform:none}}
+</style></head><body>
+<div class="wrap">
+<nav><a class="logo" href="#">Органик</a><div class="r"><a href="#services">Услуги</a><a href="#contacts">Контакты</a><a class="pill p1" style="padding:11px 20px;font-size:15px" href="https://wa.me/79251000120">Записаться</a></div></nav>
+<header class="hero hx">
+ <div>
+  <div class="chip"><span class="star">★</span><b>5,0</b> · 534 оценок на Яндекс Картах</div>
+  <h1 style="font-size:clamp(44px,6.6vw,96px)">Органик</h1>
+  <p class="lead">Новослободская ул., 3, стр. 3. Работаем ежедневно, 10:00–22:00.</p>
+  <div class="btns"><a class="pill p1" href="https://wa.me/79251000120">Записаться онлайн →</a><a class="pill p2" href="https://t.me/nailsorganic">Написать в Telegram</a></div>
+ </div>
+ <div><figure class="shot"><img src="img/organic.jpg" alt="Органик"></figure></div>
+</header>
+</div>
+<section id="services"><div class="wrap svc">
+ <div class="rv"><div class="eyebrow">Услуги</div><h2>Что можно сделать у нас</h2><p>Цены и свободное время мастеров видны сразу при записи.</p></div>
+ <ul class="rv"><li><span class="num">01</span><span>Маникюр с покрытием</span></li><li><span class="num">02</span><span>Педикюр</span></li><li><span class="num">03</span><span>Наращивание и укрепление</span></li><li><span class="num">04</span><span>Дизайн ногтей</span></li><li><span class="num">05</span><span>Снятие и уход</span></li></ul>
+</div></section>
+<section id="contacts"><div class="wrap">
+ <div class="rv"><div class="eyebrow">Контакты</div><h2>Как нас найти</h2></div>
+ <div class="info">
+  <a class="card rv" href="https://yandex.ru/maps/org/organik/63660841122/"><small>Адрес</small><b>Новослободская ул., 3, стр. 3</b></a>
+  <div class="card rv"><small>Часы работы</small><b>ежедневно, 10:00–22:00</b></div>
+  <a class="card rv" href="tel:+79251000120"><small>Телефон</small><b>+7 (925) 100-01-20</b></a>
+ </div>
+</div></section>
+<section><div class="wrap cta rv">
+ <h2>Выберите удобное время</h2>
+ <a class="pill p1" href="https://wa.me/79251000120">Записаться онлайн →</a>
+</div></section>
+<div class="wrap"><footer><span>Органик</span><span>Демо-версия сайта · подготовлено для владельца</span></footer></div>
+<div class="sticky"><a class="pill p1" href="https://wa.me/79251000120">Записаться онлайн</a></div>
+<script>const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});document.querySelectorAll('.rv').forEach(el=>io.observe(el));</script>
+</body></html>
