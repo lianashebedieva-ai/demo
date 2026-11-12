@@ -26,6 +26,15 @@
       "lastAccessed": "2026-11-12T23:08:54.339Z",
       "accessCount": 0,
       "expiresAt": "2026-12-12T23:08:54.339Z"
+    },
+    "cmd-1794525005198": {
+      "key": "cmd-1794525005198",
+      "value": "{\"command\":\"cd leads10 && /usr/bin/sed -i '' 's|<h3 class=\\\"d\\\">|<h2 class=\\\"d\\\">|g; s|</h3>|</h2>|g; s|\\\\.gal h3,\\\\.how h3,\\\\.ct h3|.gal h2,.how h2,.ct h2|' tpl2.html && /usr/bin/python3 gen2.py && cp site2/*.html publish/ && cd publish && git add -A && git commit -qm \\\"Heading levels\\\" && git push -q 2>&1 | tail -1; grep -c \\\"<h3\\\" *.html | head -2\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-12T23:10:05.198Z",
+      "lastAccessed": "2026-11-12T23:10:05.198Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-12T23:10:05.198Z"
     }
   },
   "version": "3.0.0"
