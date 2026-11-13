@@ -1,0 +1,32 @@
+{
+  "entries": {
+    "cmd-1794605632283": {
+      "key": "cmd-1794605632283",
+      "value": "{\"command\":\"cd \\\"/Users/adlanm/Library/Application Support/Claude/scratch-workspaces/4bb88111-cced-4a58-8abc-b4adba30fe4b/a5ddf99e-82cb-4b12-ade4-b999cc84be96/scratch-2026-11-07-2c60c3/mila-next/public\\\" && for f in city.jpg wave.jpg lotus.jpg poster.jpg poster-end.jpg; do echo \\\"$f $(sips -g pixelWidth -g pixelHeight $f | awk '/pixel/{printf $2\\\" \\\"}') $(du -k $f|cut -f1)k\\\"; done; ffprobe -v error -show_entries stream=width,height,bit_rate -of csv=p=0 ~/Downloads/1823bfe1-cf8a-4a93-9ed5-fd3006278143.mp4; ls ~/Downloads | grep -i -E \\\"lotus|city|mila|wave\\\" | head\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-13T21:33:52.283Z",
+      "lastAccessed": "2026-11-13T21:33:52.283Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-13T21:33:52.283Z"
+    },
+    "cmd-1794605655331": {
+      "key": "cmd-1794605655331",
+      "value": "{\"command\":\"cd \\\"/Users/adlanm/Library/Application Support/Claude/scratch-workspaces/4bb88111-cced-4a58-8abc-b4adba30fe4b/a5ddf99e-82cb-4b12-ade4-b999cc84be96/scratch-2026-11-07-2c60c3/mila-next/public\\\" && D=$TMPDIR/milaq && ffmpeg -v error -y -i $D/first.jpg -i city.jpg -i $D/last.jpg -i lotus.jpg -filter_complex \\\"[0]scale=480:270[a];[1]scale=480:270[b];[2]scale=480:270[c];[3]scale=480:270[d];[a][b]hstack[t];[c][d]hstack[u];[t][u]vstack\\\" -q:v 3 $D/cmp.jpg && echo ok\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-13T21:34:15.331Z",
+      "lastAccessed": "2026-11-13T21:34:15.331Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-13T21:34:15.331Z"
+    },
+    "cmd-1794605692392": {
+      "key": "cmd-1794605692392",
+      "value": "{\"command\":\"cd \\\"/Users/adlanm/Library/Application Support/Claude/scratch-workspaces/4bb88111-cced-4a58-8abc-b4adba30fe4b/a5ddf99e-82cb-4b12-ade4-b999cc84be96/scratch-2026-11-07-2c60c3/mila-next/public\\\" && rm -f frames/*.jpg && ffmpeg -v error -y -i ~/Downloads/1823bfe1-cf8a-4a93-9ed5-fd3006278143.mp4 -vf \\\"fps=20,unsharp=5:5:0.6:5:5:0.0\\\" -c:v libwebp -quality 82 frames/f%03d.webp && ls frames | wc -l && du -sh frames && cwebp -version >/dev/null 2>&1; ffmpeg -v error -y -i city.jpg -c:v libwebp -quality 86 city-hd.webp && ffmpeg -v error -y -i lotus.jpg -c:v libwebp -quality 86 lotus-hd.webp && ls -la city-hd.webp lotus-hd.webp\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-13T21:34:52.392Z",
+      "lastAccessed": "2026-11-13T21:34:52.392Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-13T21:34:52.392Z"
+    }
+  },
+  "version": "3.0.0"
+}
