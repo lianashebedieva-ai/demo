@@ -35,6 +35,15 @@
       "lastAccessed": "2026-11-12T23:10:05.198Z",
       "accessCount": 0,
       "expiresAt": "2026-12-12T23:10:05.198Z"
+    },
+    "cmd-1794528733046": {
+      "key": "cmd-1794528733046",
+      "value": "{\"command\":\"P=../leads10/publish; cp site/*.html $P/ && cp -R site/img/* $P/img/ && cd $P && git add -A && git commit -qm \\\"More Dagestan demos\\\" && git push -q 2>&1 | tail -1; echo pushed\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-13T00:12:13.046Z",
+      "lastAccessed": "2026-11-13T00:12:13.046Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-13T00:12:13.046Z"
     }
   },
   "version": "3.0.0"
