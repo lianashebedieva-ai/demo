@@ -44,6 +44,15 @@
       "lastAccessed": "2026-11-13T00:12:13.046Z",
       "accessCount": 0,
       "expiresAt": "2026-12-13T00:12:13.046Z"
+    },
+    "cmd-1794528779857": {
+      "key": "cmd-1794528779857",
+      "value": "{\"command\":\"cd .. && /usr/bin/python3 - <<'EOF'\\nimport re\\nP='leads10/publish/'\\nfor s in ['flystudio','fizika','moonlight','bodylove','lasflores','dendi','rahatspa']:\\n    p=P+s+'.html'; h=open(p).read()\\n    h=re.sub(r'<i>★</i> 5,0 · (\\\\d+) оценок на Яндекс Картах',r'<i>★</i> \\\\1 отзывов в 2ГИС',h)\\n    open(p,'w').write(h)\\nR={'wowstudio':'4,9','sabien':'4,9','larose':'4,8','lady':'4,8'}\\nfor s,r in R.items():\\n    p=P+s+'.html'; h=open(p).read(); h=h.replace('<i>★</i> 5,0 ·',f'<i>★</i> {r} ·'); open(p,'w').write(h)\\nprint('ok')\\nEOF\\ngrep -o '<i>★</i>[^<]*' leads10/publish/lasflores.html leads10/publish/wowstudio.html; cd leads10/publish && git add -A && git commit -qm \\\"Accurate rating chips\\\" && git push -q 2>&1|tail -1; echo pushed\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-13T00:12:59.857Z",
+      "lastAccessed": "2026-11-13T00:12:59.857Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-13T00:12:59.857Z"
     }
   },
   "version": "3.0.0"
