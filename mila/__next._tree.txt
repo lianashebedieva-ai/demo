@@ -6,4 +6,4 @@
 :HL["/demo/mila/_next/static/media/932d3869cac5e2f5-s.p.2cu8l7zf4s4ec.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/demo/mila/_next/static/media/fdbf446d127afa2d-s.p.1xjn85gt7t6qs.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 1:[["children",{"s":"__PAGE__","h":160}]]
-0:{"b":"tv8JlzrfQAINYBhA2ftFx","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"0GGHlFHXlOp4xDpZ5eAZK","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
