@@ -1,0 +1,59 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>МИЛА · пример первого экрана</title><meta name="robots" content="noindex">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}html,body{background:#0c0f14;color:#f6efe2;font-family:Manrope,sans-serif}
+.track{height:520vh;position:relative}
+.stage{position:sticky;top:0;height:100vh;overflow:hidden}
+.layer{position:absolute;inset:0;background-size:cover;background-position:center;will-change:transform,opacity,clip-path}
+#city{background-image:url(city.jpg);filter:saturate(.7)}
+#wave{background-image:url(wave.jpg);clip-path:polygon(0 0,100% 0,100% 0,0 0)}
+#lotus{background-image:url(lotus.jpg);opacity:0}
+.foam{position:absolute;left:-10%;width:120%;height:22vh;pointer-events:none;background:radial-gradient(ellipse at 50% 60%,rgba(235,250,250,.6),rgba(255,255,255,0) 65%);filter:blur(8px);opacity:0}
+.copy{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 6vw;pointer-events:none}
+.c1{opacity:1}.c1 h2{font:500 clamp(28px,4.4vw,64px)/1.1 'Cormorant Garamond';letter-spacing:.01em;text-shadow:0 2px 30px rgba(0,0,0,.6)}
+.c1 p{margin-top:14px;font-size:clamp(13px,1.2vw,16px);letter-spacing:.3em;text-transform:uppercase;opacity:.75}
+.c2{opacity:0}.c2 h2{font:600 clamp(26px,4vw,58px)/1.1 'Cormorant Garamond';font-style:italic;text-shadow:0 2px 30px rgba(0,40,50,.6)}
+.c3{opacity:0;color:#3d2a10}.c3 .k{font:600 clamp(12px,1.2vw,15px) Manrope;letter-spacing:.42em;color:#8a6420}
+.c3 h1{font:600 clamp(64px,12vw,170px)/1 'Cormorant Garamond';letter-spacing:.12em;background:linear-gradient(180deg,#e9c46a,#a8782a);-webkit-background-clip:text;background-clip:text;color:transparent;margin:.1em 0}
+.c3 .s{font:500 clamp(20px,2.4vw,34px) 'Cormorant Garamond';font-style:italic;color:#5a3e14}
+.c3 .btns{margin-top:28px;display:flex;gap:12px;pointer-events:auto;flex-wrap:wrap;justify-content:center}
+.c3 a{padding:14px 26px;border-radius:999px;font:600 15px Manrope;text-decoration:none;border:1px solid #a8782a;color:#5a3e14;background:rgba(255,250,240,.55);backdrop-filter:blur(6px)}
+.c3 a.p{background:#a8782a;color:#fff8ea}
+.hint{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);font-size:12px;letter-spacing:.3em;opacity:.7}
+.music{position:fixed;right:18px;top:18px;z-index:9;border:1px solid rgba(255,255,255,.4);background:rgba(0,0,0,.25);backdrop-filter:blur(6px);color:#fff;border-radius:999px;padding:10px 16px;font:600 13px Manrope;cursor:pointer}
+.after{min-height:60vh;background:#fbf6ec;color:#3d2a10;display:flex;align-items:center;justify-content:center;text-align:center;padding:10vh 8vw;font:500 clamp(22px,2.6vw,36px)/1.35 'Cormorant Garamond'}
+.badge{position:fixed;left:14px;bottom:12px;z-index:9;font:600 11px Manrope;letter-spacing:.12em;color:rgba(255,255,255,.6);mix-blend-mode:difference}
+</style></head><body>
+<button class="music" id="mus">♪ включить музыку</button>
+<div class="track"><div class="stage">
+ <div class="layer" id="city"></div>
+ <div class="layer" id="wave"></div>
+ <div class="layer" id="lotus"></div>
+ <div class="foam" id="foam"></div>
+ <div class="copy c1" id="c1"><h2>Город, который не даёт выдохнуть</h2><p>листайте вниз</p></div>
+ <div class="copy c2" id="c2"><h2>Даю волну, бери волну</h2></div>
+ <div class="copy c3" id="c3"><div class="k">ТВОРЧЕСКАЯ ГРУППА</div><h1>МИЛА</h1><div class="s">Содружество Свободных Абсолютов</div>
+  <div class="btns"><a class="p" href="#">Обо всём на свете</a><a href="#">Галерея креативов</a></div></div>
+ <div class="hint" id="hint">↓</div>
+</div></div>
+<div class="after">Дальше раздел «Обо всём на свете»: лента постов, подписка на авторов и музыкальный бар.</div>
+<div class="badge">ПРИМЕР ЭФФЕКТА · ЧЕРНОВИК</div>
+<audio id="au" src="music.mp3" loop preload="none"></audio>
+<script>
+const $=id=>document.getElementById(id);const T=document.querySelector('.track');
+const clamp=(v,a=0,b=1)=>Math.min(b,Math.max(a,v));const seg=(p,a,b)=>clamp((p-a)/(b-a));
+function wavePoly(h,t){const pts=[];const base=h*125-8;for(let i=0;i<=20;i++){const x=i*5;const y=base+Math.sin(i*0.9+t*8)*4+Math.sin(i*0.37+t*4)*3;pts.push(`${x}% ${Math.max(0,y)}%`)}return `polygon(0 0,100% 0,${pts.reverse().join(',')})`}
+function f(){const r=T.getBoundingClientRect();const p=clamp(-r.top/(T.offsetHeight-innerHeight));
+ const w=seg(p,.12,.5);$('wave').style.clipPath=w>=1?'none':wavePoly(w,p);
+ $('city').style.transform=`scale(${1+p*0.15}) translateY(${w*6}vh)`;$('city').style.filter=`saturate(${.7-w*.5}) blur(${w*6}px)`;
+ $('wave').style.transform=`scale(${1.05+w*0.1})`;
+ const f2=seg(p,.18,.45);$('foam').style.opacity=f2>0&&f2<1?.9:0;$('foam').style.top=(w*125-8)-14+'vh';
+ const l=seg(p,.55,.78);$('lotus').style.opacity=l;$('lotus').style.transform=`scale(${1.12-l*.12})`;
+ $('c1').style.opacity=1-seg(p,.04,.14);$('c1').style.transform=`translateY(${-seg(p,.04,.14)*40}px)`;
+ const c2=seg(p,.3,.4)-seg(p,.5,.58);$('c2').style.opacity=c2;
+ $('c3').style.opacity=seg(p,.74,.86);$('c3').style.transform=`translateY(${(1-seg(p,.74,.86))*40}px)`;
+ $('hint').style.opacity=1-seg(p,0,.1);}
+addEventListener('scroll',f,{passive:true});addEventListener('resize',f);f();
+$('mus').onclick=()=>{const a=$('au');if(a.paused){a.play();$('mus').textContent='❚❚ музыка'}else{a.pause();$('mus').textContent='♪ включить музыку'}};
+</script></body></html>
