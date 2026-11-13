@@ -387,6 +387,24 @@
       "ts": 1794579929825,
       "event": "append",
       "hash": "3408936d5285f8a5edc9ab3a65d19d2970e836286d3e89cb8e31851c1acbe577"
+    },
+    {
+      "seq": 43,
+      "length": 44,
+      "headHash": "sha256:7d0a910f7654b8674880e18d58d9ac8765a5dce355c0c7524277805a151bfa21",
+      "prevAnchorHash": "3408936d5285f8a5edc9ab3a65d19d2970e836286d3e89cb8e31851c1acbe577",
+      "ts": 1794580183622,
+      "event": "append",
+      "hash": "881828c2661ac4ed27037a3d084f336ca0f9461015dabbdbcc04ae3520bb7250"
+    },
+    {
+      "seq": 44,
+      "length": 45,
+      "headHash": "sha256:2545939cde8f76aa2c8d33734f5a9a0e6bcf1f4743e6d50a648078b19ea9536b",
+      "prevAnchorHash": "881828c2661ac4ed27037a3d084f336ca0f9461015dabbdbcc04ae3520bb7250",
+      "ts": 1794580187564,
+      "event": "append",
+      "hash": "8a07cf732872d92bfff15fd3e16a110b83eeb56aa82828971b2b2b07a99f125d"
     }
   ]
 }

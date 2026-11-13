@@ -386,6 +386,24 @@
       "lastAccessed": "2026-11-13T14:25:29.885Z",
       "accessCount": 0,
       "expiresAt": "2026-12-13T14:25:29.885Z"
+    },
+    "cmd-1794580183685": {
+      "key": "cmd-1794580183685",
+      "value": "{\"command\":\"P=\\\"/Users/adlanm/Library/Application Support/Claude/scratch-workspaces/4bb88111-cced-4a58-8abc-b4adba30fe4b/a5ddf99e-82cb-4b12-ade4-b999cc84be96/scratch-2026-11-07-2c60c3/leads10/publish\\\"; rm -rf \\\"$P/mila\\\" && cp -R out \\\"$P/mila\\\" && touch \\\"$P/.nojekyll\\\" && cd \\\"$P\\\" && git add -A && git commit -qm \\\"MILA demo v3 on Next.js + R3F + GSAP + Lenis\\\" && git push -q && for i in $(seq 1 25); do c=$(curl -s https://lianashebedieva-ai.github.io/demo/mila/ | grep -c '_next'); [ \\\"$c\\\" -ge 1 ] && break; sleep 6; done; echo live $c; curl -s -o /dev/null -w \\\"%{http_code}\\\\n\\\" \\\"https://lianashebedieva-ai.github.io/demo/mila/_next/static/$(ls out/_next/static | head -1)/\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-13T14:29:43.685Z",
+      "lastAccessed": "2026-11-13T14:29:43.685Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-13T14:29:43.685Z"
+    },
+    "cmd-1794580187597": {
+      "key": "cmd-1794580187597",
+      "value": "{\"command\":\"ls mila/_next/static | head -3; JS=$(ls mila/_next/static/chunks | head -1); curl -s -o /dev/null -w \\\"%{http_code}\\\\n\\\" \\\"https://lianashebedieva-ai.github.io/demo/mila/_next/static/chunks/$JS\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-13T14:29:47.597Z",
+      "lastAccessed": "2026-11-13T14:29:47.597Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-13T14:29:47.597Z"
     }
   },
   "version": "3.0.0"
