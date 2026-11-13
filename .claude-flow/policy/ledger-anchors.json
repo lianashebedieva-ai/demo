@@ -54,6 +54,24 @@
       "ts": 1794528779829,
       "event": "append",
       "hash": "644b4b4354f448661b7501b7ce3eb607a62d4a314aaa533b428007bb2046f294"
+    },
+    {
+      "seq": 6,
+      "length": 7,
+      "headHash": "sha256:d76f16b224e4b4284286180a639a33899f76b0832824bdf9667ca3408949669f",
+      "prevAnchorHash": "644b4b4354f448661b7501b7ce3eb607a62d4a314aaa533b428007bb2046f294",
+      "ts": 1794569215063,
+      "event": "append",
+      "hash": "87a395ff2c00949946a903750ad8238187a61293c2e2f8b612e31fcca22bd10b"
+    },
+    {
+      "seq": 7,
+      "length": 8,
+      "headHash": "sha256:f87c55aaa24044f080502765e589e375b089e54c979a6bda16d1653a586c65cb",
+      "prevAnchorHash": "87a395ff2c00949946a903750ad8238187a61293c2e2f8b612e31fcca22bd10b",
+      "ts": 1794569246867,
+      "event": "append",
+      "hash": "f8c7592429babf3d33187f39fc813933b8cde26c819d70fa5dd9a6bb13c3af8d"
     }
   ]
 }

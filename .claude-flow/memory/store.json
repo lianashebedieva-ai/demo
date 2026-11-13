@@ -53,6 +53,24 @@
       "lastAccessed": "2026-11-13T00:12:59.857Z",
       "accessCount": 0,
       "expiresAt": "2026-12-13T00:12:59.857Z"
+    },
+    "cmd-1794569215119": {
+      "key": "cmd-1794569215119",
+      "value": "{\"command\":\"cd .. && sed -i '' 's/\\\"pick\\\":\\\\[4,8,3,6,0,2,5,7,9,1\\\\]/\\\"pick\\\":[8,4,3,6,0,2,5,7,9,1]/' data.json && /usr/bin/python3 -I gen5.py && sed -i '' 's/Три шага до визита/Три шага до заказа/' site/karavaevo.html && sed -i '' 's/Три шага до визита/Три шага до ремонта/' site/kubasov.html && PUB=../leads10/publish && for s in kubasov resetbody karavaevo hvost kep; do cp site/$s.html $PUB/; rm -rf $PUB/img/$s; cp -R site/img/$s $PUB/img/; done && cd $PUB && git add -A && git commit -qm \\\"Add 5 Moscow demo sites\\\" && git push -q && git log --oneline -1\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-13T11:26:55.119Z",
+      "lastAccessed": "2026-11-13T11:26:55.119Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-13T11:26:55.119Z"
+    },
+    "cmd-1794569246916": {
+      "key": "cmd-1794569246916",
+      "value": "{\"command\":\"M=\\\"../../msk3\\\"; P=\\\"$(cd $M && pwd)\\\"; rm -rf $P/shots/karavaevo; node ../../promo3d/v2/cap.mjs \\\"file://$P/site/karavaevo.html\\\" \\\"$P/shots/karavaevo\\\" 390 844 1 0 2 >/dev/null 2>&1; for s in kubasov resetbody karavaevo hvost kep; do sips -s format png $P/shots/$s/000.jpg --out ~/Downloads/demo-shots/$s.png >/dev/null; done; ls -la ~/Downloads/demo-shots | tail -5; for s in kubasov resetbody karavaevo hvost kep; do curl -s -o /dev/null -w \\\"$s %{http_code}\\\\n\\\" https://lianashebedieva-ai.github.io/demo/$s.html; done\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-13T11:27:26.916Z",
+      "lastAccessed": "2026-11-13T11:27:26.916Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-13T11:27:26.916Z"
     }
   },
   "version": "3.0.0"

@@ -1,0 +1,166 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="robots" content="noindex"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Культура цветов · заказать букет</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;1,400&family=Unbounded:wght@600;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f2ec;--ink:#1c1f17;--soft:#6f7466;--acc:#3f6b3a;--acci:#ffffff;--disp:'Cormorant',Georgia,serif;--dw:500;--ls:-.01em;--line:color-mix(in srgb,var(--ink) 14%,transparent);--ease:cubic-bezier(.22,.8,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:500 17px/1.6 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.d{font-family:var(--disp);font-weight:var(--dw);letter-spacing:var(--ls)}
+.pill{display:inline-flex;align-items:center;gap:12px;padding:16px 28px;border-radius:999px;font-weight:700;font-size:16px;transition:transform .6s var(--ease),background .3s,color .3s;white-space:nowrap}
+.pill:active{transform:scale(.97)}
+.p1{background:var(--acc);color:var(--acci)}.p1:hover{transform:translateY(-2px)}
+.pg{background:rgba(255,255,255,.14);color:#fff;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.25)}
+.pl{border:1.5px solid var(--line)}.pl:hover{border-color:var(--ink)}
+/* nav */
+nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:20;display:flex;align-items:center;gap:6px;padding:6px 6px 6px 20px;border-radius:999px;background:color-mix(in srgb,var(--bg) 72%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);width:max-content;max-width:calc(100% - 24px)}
+nav .logo{font:700 15px Manrope;margin-right:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:42vw}
+nav .lk{font-size:14px;color:var(--soft);padding:8px 12px}nav .lk:hover{color:var(--ink)}
+nav .pill{padding:10px 18px;font-size:14px}
+/* hero */
+.hero{position:relative;height:100dvh;min-height:620px;overflow:hidden;color:#fff}
+.hero .bg{position:absolute;inset:0;transform:scale(1.12);animation:hz 2.4s var(--ease) forwards}
+@keyframes hz{to{transform:scale(1.02)}}
+.hero .bg img{will-change:transform}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.25) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,.15) 55%,rgba(0,0,0,.72) 100%)}
+.hero .in{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:0 40px 56px;max-width:1400px;margin:0 auto}
+.chip{display:inline-flex;gap:8px;align-items:center;font-size:14px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.14);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.22);margin-bottom:22px}
+.chip i{font-style:normal;color:var(--acc)}
+.hero h1{font-size:clamp(64px,11vw,180px);line-height:.92;margin-bottom:22px;max-width:12ch}
+.hero h1 span{display:inline-block;opacity:0;transform:translateY(40%);animation:up 1.2s var(--ease) forwards}
+@keyframes up{to{opacity:1;transform:none}}
+.hero .row{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;opacity:0;animation:fade 1.2s .5s var(--ease) forwards}
+@keyframes fade{to{opacity:1}}
+.hero p{font-size:18px;max-width:34ch;opacity:.9}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+/* manifesto */
+.mani{padding:22vh 40px;max-width:1300px;margin:0 auto}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--soft);margin-bottom:28px}
+.mani .txt{font-size:clamp(30px,4.6vw,66px);line-height:1.12}
+.mani .txt .w{opacity:.14;transition:opacity .5s}
+.mani .tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:44px}
+.mani .tags span{border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:14px;color:var(--soft)}
+/* chapters */
+.ch{position:relative;height:150vh}
+.ch .st{position:sticky;top:0;height:100dvh;overflow:hidden;color:#fff}
+.ch .st .ph{position:absolute;inset:-8% 0;will-change:transform}
+.ch .st:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.65))}
+.ch .cap{position:absolute;z-index:2;left:40px;right:40px;bottom:64px;max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:end;gap:20px}
+.ch .n{font:500 14px Manrope;opacity:.8;margin-bottom:12px}
+.ch h2{font-size:clamp(46px,8vw,128px);line-height:.95}
+.ch .cap p{max-width:30ch;opacity:.9;text-align:right}
+.ch .cap>div{transform:translateY(30px);opacity:0;transition:all 1s var(--ease)}
+.ch.on .cap>div{transform:none;opacity:1}
+/* gallery */
+.gal{padding:16vh 0 12vh;overflow:hidden}
+.gal .hd{padding:0 40px;max-width:1400px;margin:0 auto 40px;display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+.gal h2,.how h2,.ct h2{font-size:clamp(34px,5vw,72px);line-height:1}
+.track{display:flex;gap:16px;width:max-content;animation:mq 46s linear infinite}
+.gal:hover .track{animation-play-state:paused}
+.track figure{width:min(26vw,360px);aspect-ratio:3/4;border-radius:22px;overflow:hidden;flex:none}
+.track figure img{transition:transform 1.2s var(--ease)}.track figure:hover img{transform:scale(1.06)}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* how */
+.how{padding:14vh 40px;max-width:1400px;margin:0 auto}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+.step{border-top:1.5px solid var(--ink);padding-top:22px}
+.step b{display:block;font-size:22px;margin:14px 0 8px}
+.step span{color:var(--soft)}
+.step .k{font-size:44px;line-height:1}
+/* contacts */
+.ct{padding:6vh 40px 12vh;max-width:1400px;margin:0 auto}
+.grid{display:grid;grid-template-columns:1.2fr 1fr;gap:18px;margin-top:44px}
+.card{border-radius:26px;overflow:hidden;position:relative}
+.card.img{min-height:440px}
+.card.info{background:color-mix(in srgb,var(--ink) 5%,var(--bg));border:1px solid var(--line);padding:34px;display:flex;flex-direction:column;justify-content:space-between;gap:26px}
+.card.info small{display:block;color:var(--soft);font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
+.card.info .v{font-size:21px;font-weight:700;line-height:1.35}
+footer{border-top:1px solid var(--line);padding:30px 40px 40px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--soft);font-size:14px;max-width:1400px;margin:0 auto}
+.rv{opacity:0;transform:translateY(30px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.sticky{display:none}
+@media(max-width:860px){
+ nav{top:10px;padding:5px 5px 5px 16px}nav .lk{display:none}
+ .hero .in{padding:0 18px 108px}
+ .hero p{font-size:16px}
+ .mani{padding:16vh 18px}
+ .ch{height:130vh}
+ .ch .cap{left:18px;right:18px;bottom:110px;flex-direction:column;align-items:start}
+ .ch .cap p{text-align:left}
+ .gal .hd,.how,.ct{padding-left:18px;padding-right:18px}
+ .track figure{width:62vw}
+ .steps,.grid{grid-template-columns:1fr}
+ .card.img{min-height:320px}
+ footer{padding:26px 18px 110px}
+ .hero .btns .pill{flex:1;justify-content:center}
+ .sticky{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:30;transform:translateY(140%);transition:transform .6s var(--ease)}
+ .sticky.show{transform:none}
+ .sticky .pill{width:100%;justify-content:center;box-shadow:0 16px 40px -12px rgba(0,0,0,.5)}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.hero h1 span,.hero .row,.rv{opacity:1;transform:none}.mani .txt .w{opacity:1}.ch .cap>div{opacity:1;transform:none}}
+</style></head><body>
+<nav><a class="logo" href="#top">Культура цветов</a><a class="lk" href="#services">Услуги</a><a class="lk" href="#works">Работы</a><a class="lk" href="#contacts">Контакты</a><a class="pill p1" href="https://t.me/kulturacvetovv">Заказать</a></nav>
+
+<header class="hero" id="top">
+ <div class="bg"><img id="hbg" src="img/kultura/0.jpg" alt="Культура цветов"></div>
+ <div class="in">
+  <div class="chip"><i>★</i> 5,0 · 430 оценок на Яндекс Картах</div>
+  <h1 class="d"><span style="animation-delay:0.10s">Культура</span> <span style="animation-delay:0.22s">цветов</span> </h1>
+  <div class="row"><p>Москва, Шмитовский пр., 10/7. Работаем ежедневно, 09:00–21:00.</p>
+   <div class="btns"><a class="pill p1" href="https://t.me/kulturacvetovv">Заказать букет →</a><a class="pill pg" href="https://t.me/kulturacvetovv">Telegram</a></div></div>
+ </div>
+</header>
+
+<section class="mani"><div class="eyebrow">Культура цветов</div>
+ <p class="txt d" id="mani">Букеты, которые говорят за вас. Соберём к празднику или просто так, привезём в удобное время.</p>
+ <div class="tags"><span>Букеты</span><span>Доставка</span><span>Композиции</span><span>Сезонные цветы</span></div>
+</section>
+
+<div id="services"><section class="ch"><div class="st"><div class="ph"><img loading="lazy" src="img/kultura/1.jpg" alt=""></div><div class="cap"><div><div class="n">01 / 03</div><h2 class="d">Букеты</h2></div><div><p>Пышные, живые, со вкусом.</p></div></div></div></section><section class="ch"><div class="st"><div class="ph"><img loading="lazy" src="img/kultura/2.jpg" alt=""></div><div class="cap"><div><div class="n">02 / 03</div><h2 class="d">Подарок</h2></div><div><p>Красиво упакуем и привезём.</p></div></div></div></section><section class="ch"><div class="st"><div class="ph"><img loading="lazy" src="img/kultura/3.jpg" alt=""></div><div class="cap"><div><div class="n">03 / 03</div><h2 class="d">Магазин</h2></div><div><p>Заходите выбрать сами.</p></div></div></div></section></div>
+
+<section class="gal" id="works">
+ <div class="hd rv"><div><div class="eyebrow">Работы</div><h2 class="d">Наши работы</h2></div><a class="pill pl" href="https://yandex.ru/maps/org/kultura_tsvetov/59617977680/">Все фото и отзывы →</a></div>
+ <div class="track"><figure><img loading="lazy" src="img/kultura/4.jpg" alt=""></figure><figure><img loading="lazy" src="img/kultura/5.jpg" alt=""></figure><figure><img loading="lazy" src="img/kultura/6.jpg" alt=""></figure><figure><img loading="lazy" src="img/kultura/7.jpg" alt=""></figure><figure><img loading="lazy" src="img/kultura/8.jpg" alt=""></figure><figure><img loading="lazy" src="img/kultura/9.jpg" alt=""></figure><figure><img loading="lazy" src="img/kultura/4.jpg" alt=""></figure><figure><img loading="lazy" src="img/kultura/5.jpg" alt=""></figure><figure><img loading="lazy" src="img/kultura/6.jpg" alt=""></figure><figure><img loading="lazy" src="img/kultura/7.jpg" alt=""></figure><figure><img loading="lazy" src="img/kultura/8.jpg" alt=""></figure><figure><img loading="lazy" src="img/kultura/9.jpg" alt=""></figure></div>
+</section>
+
+<section class="how">
+ <div class="rv"><div class="eyebrow">Запись</div><h2 class="d">Три шага до заказа</h2></div>
+ <div class="steps">
+  <div class="step rv"><div class="k d">01</div><b>Напишите нам</b><span>Расскажите повод и бюджет.</span></div>
+  <div class="step rv"><div class="k d">02</div><b>Соберём букет</b><span>Пришлём фото перед доставкой.</span></div>
+  <div class="step rv"><div class="k d">03</div><b>Готово</b><span>Москва, Шмитовский пр., 10/7</span></div>
+ </div>
+</section>
+
+<section class="ct" id="contacts">
+ <div class="rv"><div class="eyebrow">Контакты</div><h2 class="d">Ждём вас</h2></div>
+ <div class="grid">
+  <div class="card img rv"><img loading="lazy" src="img/kultura/3.jpg" alt=""></div>
+  <div class="card info rv">
+   <div><small>Адрес</small><a class="v" href="https://yandex.ru/maps/org/kultura_tsvetov/59617977680/">Москва, Шмитовский пр., 10/7</a></div>
+   <div><small>Часы работы</small><div class="v">ежедневно, 09:00–21:00</div></div>
+   <div><small>Телефон</small><a class="v" href="tel:+79257574767">+7 (925) 757-47-67</a></div>
+   <div class="btns"><a class="pill p1" href="https://t.me/kulturacvetovv">Заказать букет →</a><a class="pill pl" href="https://t.me/kulturacvetovv">Telegram</a></div>
+  </div>
+ </div>
+</section>
+<footer><span>Культура цветов</span><span>Демо-версия сайта · подготовлено для владельца</span></footer>
+<div class="sticky" id="stk"><a class="pill p1" href="https://t.me/kulturacvetovv">Заказать букет</a></div>
+<script>
+(()=>{
+const m=document.getElementById('mani');m.innerHTML=m.textContent.trim().split(/\s+/).map(w=>'<span class="w">'+w+'</span> ').join('');
+const ws=[...m.querySelectorAll('.w')],chs=[...document.querySelectorAll('.ch')],hb=document.getElementById('hbg'),stk=document.getElementById('stk');
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+let t=false;function f(){t=false;const H=innerHeight,y=scrollY;
+ hb.style.transform='translateY('+(y*.25)+'px)';
+ const r=m.getBoundingClientRect(),p=Math.min(1,Math.max(0,(H*.85-r.top)/(r.height+H*.25)));const k=Math.floor(p*ws.length*1.05);ws.forEach((w,i)=>w.style.opacity=i<k?1:.14);
+ chs.forEach(c=>{const b=c.getBoundingClientRect();const q=(H-b.top)/(b.height+H);c.querySelector('.ph').style.transform='translateY('+((q-.5)*-10)+'%) scale(1.08)';if(b.top<H*.35&&b.bottom>H*.6)c.classList.add('on');else c.classList.remove('on')});
+ stk.classList.toggle('show',y>H*.7)}
+addEventListener('scroll',()=>{if(!t){t=true;requestAnimationFrame(f)}},{passive:true});addEventListener('resize',f);f();
+})();
+</script>
+</body></html>
